@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   
+   <style> 
+        input[type=button], input[type=submit], input[type=reset] {
+          background-color:blue;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          width: 160px;
+          
+        }
+        </style>
+   <body>
+      <form action="http://localhost:5000/result" method = "post">
+    
+        <label for="mes">Mês:</label>
+        <select name="mes" id="mes">
+        <option value="01">Janeiro</option>
+        </select>
+      
+     <label for="ano"> , Ano</label>
+     <select name="ano" id="ano">
+     <option value="2023">2023</option>
+     </select>
+       
+       <label for="mes"> e Por:</label>
+       <select name="demi" id="demi">
+       <option value="01">Admitidos</option>
+       <option value="01">Demitidos</option>
+       </select>
+       <hr>     
+    <input type="radio" name="options" id="options" value="Nível Escolar"> Nível Escolar </input><br>
+    <input type="radio" name="options" id="options" value="Sexo"> Sexo </input><br>
+    <input type="radio" name="options" id="options" value="Cor"> Cor </input><br>
+    <input type="radio" name="options" id="options" value="Região"> Região </input><br>
+    <input type="radio" name="options" id="options" value="Estado"> Estado </input><br>
+    <input type="radio" name="options" id="options" value="Municipio"> Municipio </input><br>
+    <input type="radio" name="options" id="options" value="Cargo"> Cargo </input><br>
+    <input type="radio" name="options" id="options" value="Tipo de Deficiência"> Tipo de Deficiência </input><br>
+    <hr>
+   
+         <p><input type="submit" value="Gerar Gráfico"></p>
+      </form>   
+   </body>
+</html>

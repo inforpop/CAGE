@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {% include 'base.html' %}
+<body>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+                
+        <h5 class="card-title">Visualização Global</h5>
+        <p class="card-text">{% include 'totais.html' %}</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Gráfico por {{ nivel }}  {{afazer}}</h5>
+        <h5 class="card-title">{{ plot|safe }}</h5>
+        <p class="card-text"></p>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+    
+</body>
+</html>
